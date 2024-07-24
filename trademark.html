@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Optimistic IP - Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./assets/img/optimisticiplogo.jpeg" rel="icon">
+  <link href="./assets/img/optimisticiplogo.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <span class="d-none d-lg-block">OptimisticIP</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="./pages-login.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item d-flex justify-content-center">
+        <a class="nav-link collapsed" href="index.html">
+          <img src="./assets/img/optimisticiplogo.jpeg" alt="" style="height: 150px;">
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link" href="trademark.html">
+          <i class="bi bi-patch-check"></i>
+          <span>TRADEMARK AFFIDAVIT</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="examination.html">
+          <i class="bi bi-card-text"></i>
+          <span>EXAMINATION REPORT</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="opposition.html">
+          <i class="bi bi-envelope-exclamation"></i>
+          <span>OPPOSITION NOTICE</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="drafts.html">
+          <i class="bi bi-inboxes"></i>
+          <span>DRAFTS</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="final.html">
+          <i class="bi bi-floppy"></i>
+          <span>FINAL</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Logout</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>TRADEMARK AFFIDAVIT FORM</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Trademark Affidavit</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row d-flex justify-content-center">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+
+            <div class="card">
+              <div class="card-body">
+
+                <!-- Vertical Form -->
+                <form class="row g-3">
+
+                  <h5 class="card-title">INTRODUCTION</h5>
+                  <hr style="margin: 0; border: 1px solid black;">
+
+                  <div class="col-lg-4 col-sm-12" id="typeOfApplicant">
+                    <legend class="col-form-label"><strong>TYPE OF APPLICANT<span class="required"> *</span></strong></legend>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="typeOfApplicant" id="typeOfApplicant1"
+                          value="option1" onclick="trademarkEntityTypeVisible()" required>
+                        <label class="form-check-label" for="typeOfApplicant1">
+                          STARTUP
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="typeOfApplicant" id="typeOfApplicant2"
+                          value="option2" onclick="trademarkEntityTypeVisible()">
+                        <label class="form-check-label" for="typeOfApplicant2">
+                          SMALL ENTERPRISES
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="typeOfApplicant" id="typeOfApplicant3"
+                          value="option1" onclick="trademarkEntityTypeNotVisible();nameOfPrivateLimitedNotVisible();nameOfLLPNotVisible();nameOfPartnershipFirmNotVisible();nameOfOPCNotVisible();nameOfProprietorNotVisible()">
+                        <label class="form-check-label" for="typeOfApplicant3">
+                          INDIVIUAL
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="typeOfApplicant" id="typeOfApplicant4"
+                          value="option2" onclick="trademarkEntityTypeVisible()">
+                        <label class="form-check-label" for="typeOfApplicant4">
+                          OTHERS
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-8 col-sm-12" id="trademarkEntityType">
+                    <legend class="col-form-label"><strong>ENTITY TYPE</strong></legend>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entityType" id="entityType1" value="option1" onclick="nameOfPrivateLimitedVisible();nameOfLLPNotVisible();nameOfPartnershipFirmNotVisible();nameOfOPCNotVisible();nameOfProprietorNotVisible()">
+                        <label class="form-check-label" for="entityType1">
+                          PRIVATE LIMITED
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entityType" id="entityType2" value="option2" onclick="nameOfLLPVisible();nameOfPrivateLimitedNotVisible();nameOfPartnershipFirmNotVisible();nameOfOPCNotVisible();nameOfProprietorNotVisible()">
+                        <label class="form-check-label" for="entityType2">
+                          LLP
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entityType" id="entityType3" value="option3" onclick="nameOfPartnershipFirmVisible();nameOfPrivateLimitedNotVisible();nameOfLLPNotVisible();nameOfOPCNotVisible();nameOfProprietorNotVisible()">
+                        <label class="form-check-label" for="entityType3">
+                          PATNERSHIP FIRM
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entityType" id="entityType4" value="option4" onclick="nameOfOPCVisible();nameOfPrivateLimitedNotVisible();nameOfLLPNotVisible();nameOfPartnershipFirmNotVisible();nameOfProprietorNotVisible()">
+                        <label class="form-check-label" for="entityType4">
+                          OPC
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entityType" id="entityType5" value="option5" onclick="nameOfProprietorVisible();nameOfPrivateLimitedNotVisible();nameOfLLPNotVisible();nameOfPartnershipFirmNotVisible();nameOfOPCNotVisible()">
+                        <label class="form-check-label" for="entityType5">
+                          PROPRETIOR
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notvisible col-lg-6 col-sm-12" id="nameOfPrivateLimitedBlock">
+                    <label for="nameOfPrivateLimited" class="col-form-label"><strong>NAME OF THE PRIVATE
+                        LIMITED</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Name Of Private Limited"
+                      id="nameOfPrivateLimited">
+                  </div>
+
+                  <div class="notvisible col-lg-6 col-sm-12" id="nameOfLLPBlock">
+                    <label for="nameOfLLP" class="col-form-label"><strong>NAME OF LLP</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Name Of LLP"
+                      id="nameOfLLP">
+                  </div>
+
+                  <div class="notvisible col-lg-6 col-sm-12" id="nameOfPartnershipFirmBlock">
+                    <label for="nameOfPartnershipFirm" class="col-form-label"><strong>NAME OF PARTNERSHIP FIRM </strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Name Of Private Limited"
+                      id="nameOfPartnershipFirm">
+                  </div>
+
+                  <div class="notvisible col-lg-6 col-sm-12" id="nameOfThePartnersBlock">
+                    <label for="nameOfThePartners" class="col-form-label"><strong>NAME OF THE PARTNERS</strong></label>
+                    <div class="col-12">
+                      <textarea class="form-control" style="height: 70px" id="nameOfThePartners"
+                        placeholder="Enter Name Of Partners"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="notvisible col-lg-6 col-sm-12" id="nameOfOPCBlock">
+                    <label for="nameOfOPC" class="col-form-label"><strong>NAME OF OPC </strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Name Of Private Limited"
+                      id="nameOfOPC">
+                  </div>
+
+                  <div class="notvisible col-lg-6 col-sm-12" id="nameOfProprietorBlock">
+                    <label for="nameOfProprietor" class="col-form-label"><strong>NAME OF PROPRETIOR </strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Name Of Private Limited"
+                      id="nameOfProprietor">
+                  </div>
+
+                  <div class="col-12" id="addressApplicant">
+                    <label for="addressApplicant" class="col-form-label"><strong>ADDRESS OF APPLICANT</strong></label>
+                    <div class="d-flex">
+                      <div class="col-lg-6 col-sm-6 p-2">
+                        <label for="applicantStreetAddress" class="col-form-label">Street Address</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter Street Address"
+                          id="applicantStreetAddress">
+                      </div>
+                      <div class="col-lg-6 col-sm-6 p-2">
+                        <label for="applicantAddressLine2" class="col-form-label">Address Line 2</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter Address Line 2"
+                          id="applicantAddressLine2">
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="col-lg-3 col-sm-3 p-2">
+                        <label for="applicantCity" class="col-form-label">City</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter City" id="applicantCity">
+                      </div>
+                      <div class="col-lg-3 col-sm-3 p-2">
+                        <label for="applicantState" class="col-form-label">State/Region/Province</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter State or Region"
+                          id="applicantState">
+                      </div>
+                      <div class="col-lg-3 col-sm-3 p-2">
+                        <label for="applicantPostalCode" class="col-form-label">Postal / Zip Code</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter Postal or Zip Code"
+                          id="applicantPostalCode">
+                      </div>
+                      <div class="col-lg-3 col-sm-12 p-2">
+                        <label for="applicantCountry" class="col-form-label">Country</label>
+                        <div class="col-12">
+                          <select class="form-select" aria-label="Default select example" id="applicantCountry"
+                            name="applicantCountry">
+                            <option>select country</option>
+                            <option value="AF">Afghanistan</option>
+                            <option value="AX">Aland Islands</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antarctica</option>
+                            <option value="AG">Antigua and Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="BA">Bosnia and Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BV">Bouvet Island</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="BN">Brunei Darussalam</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="CV">Cape Verde</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, Democratic Republic of the Congo</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CI">Cote D'Ivoire</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CW">Curacao</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands (Malvinas)</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GG">Guernsey</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-Bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HM">Heard Island and Mcdonald Islands</option>
+                            <option value="VA">Holy See (Vatican City State)</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran, Islamic Republic of</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IM">Isle of Man</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JE">Jersey</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KP">Korea, Democratic People's Republic of</option>
+                            <option value="KR">Korea, Republic of</option>
+                            <option value="XK">Kosovo</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Lao People's Democratic Republic</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libyan Arab Jamahiriya</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MO">Macao</option>
+                            <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MV">Maldives</option>
+                            <option value="ML">Mali</option>
+                            <option value="MT">Malta</option>
+                            <option value="MH">Marshall Islands</option>
+                            <option value="MQ">Martinique</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="MU">Mauritius</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">Mexico</option>
+                            <option value="FM">Micronesia, Federated States of</option>
+                            <option value="MD">Moldova, Republic of</option>
+                            <option value="MC">Monaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MA">Morocco</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="MM">Myanmar</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="AN">Netherlands Antilles</option>
+                            <option value="NC">New Caledonia</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Niger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk Island</option>
+                            <option value="MP">Northern Mariana Islands</option>
+                            <option value="NO">Norway</option>
+                            <option value="OM">Oman</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PW">Palau</option>
+                            <option value="PS">Palestinian Territory, Occupied</option>
+                            <option value="PA">Panama</option>
+                            <option value="PG">Papua New Guinea</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PN">Pitcairn</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RE">Reunion</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russian Federation</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="BL">Saint Barthelemy</option>
+                            <option value="SH">Saint Helena</option>
+                            <option value="KN">Saint Kitts and Nevis</option>
+                            <option value="LC">Saint Lucia</option>
+                            <option value="MF">Saint Martin</option>
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                            <option value="VC">Saint Vincent and the Grenadines</option>
+                            <option value="WS">Samoa</option>
+                            <option value="SM">San Marino</option>
+                            <option value="ST">Sao Tome and Principe</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="SN">Senegal</option>
+                            <option value="RS">Serbia</option>
+                            <option value="CS">Serbia and Montenegro</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leone</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SX">Sint Maarten</option>
+                            <option value="SK">Slovakia</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="SB">Solomon Islands</option>
+                            <option value="SO">Somalia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                            <option value="SS">South Sudan</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="SD">Sudan</option>
+                            <option value="SR">Suriname</option>
+                            <option value="SJ">Svalbard and Jan Mayen</option>
+                            <option value="SZ">Swaziland</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="SY">Syrian Arab Republic</option>
+                            <option value="TW">Taiwan, Province of China</option>
+                            <option value="TJ">Tajikistan</option>
+                            <option value="TZ">Tanzania, United Republic of</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TL">Timor-Leste</option>
+                            <option value="TG">Togo</option>
+                            <option value="TK">Tokelau</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad and Tobago</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey</option>
+                            <option value="TM">Turkmenistan</option>
+                            <option value="TC">Turks and Caicos Islands</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="UM">United States Minor Outlying Islands</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="VN">Viet Nam</option>
+                            <option value="VG">Virgin Islands, British</option>
+                            <option value="VI">Virgin Islands, U.s.</option>
+                            <option value="WF">Wallis and Futuna</option>
+                            <option value="EH">Western Sahara</option>
+                            <option value="YE">Yemen</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabwe</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <h5 class="card-title">TRADEMARK DETAILS</h5>
+                  <hr style="margin: 0; border: 1px solid black;">
+
+                  <div class="col-lg-3 col-sm-12" id="trademarkType">
+                    <legend class="col-form-label"><strong>TRADEMARK TYPE<span class="required"> *</span></strong></legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="trademarkType" id="trademarkType1"
+                          value="option1" onclick="authorizationLogoDeviceNotVisible()">
+                        <label class="form-check-label" for="trademarkType1">
+                          WORD
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="trademarkType" id="trademarkType2"
+                          value="option2" onclick="authorizationLogoDeviceVisible()">
+                        <label class="form-check-label" for="trademarkType2">
+                          DEVICE / LOGO
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="notvisible col-lg-4 col-sm-12" id="authorizationLogoDeviceBlock">
+                    <label for="authorizationLogoDevice" class="col-form-label"><strong>LOGO/DEVICE</strong></label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="file" id="authorizationLogoDevice">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="trademarkName" class="col-form-label"><strong>NAME OF TRADEMARK<span class="required"> *</span></strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Name Of Trademark"
+                      id="trademarkName">
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="trademarkClass" class="col-form-label"><strong>TRADEMARK CLASS<span class="required"> *</span></strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="trademarkClass"
+                        name="country">
+                        <option>- Select -</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-12" id="trademarkOffice">
+                    <legend class="col-form-label"><strong>TRADEMARK OFFICE/JURISDICTION</strong></legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="trademarkOffice" id="trademarkOffice1"
+                          value="option1">
+                        <label class="form-check-label" for="trademarkOffice1">
+                          MUMBAI
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="trademarkOffice" id="trademarkOffice2"
+                          value="option2">
+                        <label class="form-check-label" for="trademarkOffice2">
+                          DELHI
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="trademarkOffice" id="trademarkOffice3"
+                          value="option1">
+                        <label class="form-check-label" for="trademarkOffice3">
+                          KOLKATA
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="trademarkOffice" id="trademarkOffice4"
+                          value="option2">
+                        <label class="form-check-label" for="trademarkOffice4">
+                          CHENNAI
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="trademarkOffice" id="trademarkOffice5"
+                          value="option2">
+                        <label class="form-check-label" for="trademarkOffice5">
+                          AHMEDABAD
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="trademarkUseStatus" class="col-form-label"><strong>TRADEMARK USE STATUS</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="trademarkUseStatus"
+                        name="country">
+                        <option>- Select -</option>
+                        <option value="UseStatus1" onclick="trademarkUseStatusDateOfUseNotVisible()">Proposed To Be Used</option>
+                        <option value="UseStatus2" onclick="trademarkUseStatusDateOfUseVisible()">Already Using It</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="notvisible col-lg-4 col-sm-12" id="trademarkUseStatusDateOfUseBlock">
+                    <label for="trademarkUseStatusDateOfUse" class="col-form-label"><strong>DATE OF USE</strong></label>
+                    <div class="col-12">
+                        <input type="date" class="form-control" id="trademarkUseStatusDateOfUse">
+                    </div>
+                </div>
+
+                  <div class="col-lg-5 col-sm-12" id="previousRegistration">
+                    <legend class="col-form-label"><strong>ANY PREVIOUS REGISTRATION FOR THE SMAE OR SIMILAR MARK</strong></legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="previousRegistration" id="previousRegistration1"
+                          value="option1">
+                        <label class="form-check-label" for="previousRegistration1">
+                          YES
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="previousRegistration" id="previousRegistration2"
+                          value="option2">
+                        <label class="form-check-label" for="previousRegistration2">
+                          NO
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="trademarkNumber" class="col-form-label"><strong>Number</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Trademark Number"
+                      id="trademarkNumber">
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="trademarkStatus" class="col-form-label col-12"><strong>TRADEMARK USE STATUS</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="trademarkStatus"
+                        name="country">
+                        <option>- Select -</option>
+                        <option value="Status1">APPLIED</option>
+                        <option value="Status2">OBJECTED</option>
+                        <option value="Status3">ACCEPTED AND ADVERTISED</option>
+                        <option value="Status4">REGISTERED</option>
+                        <option value="Status5">OPPOSED</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12" id="trademarkProof">
+                    <legend class="col-form-label"><strong>PROOFS AVAILABLE</strong></legend>
+                  <div class="col-sm-10">
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="trademarkProof1">
+                      <label class="form-check-label" for="trademarkProof1">
+                        WEBSITE
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="trademarkProof2" >
+                      <label class="form-check-label" for="trademarkProof2">
+                        FACEBOOK
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="trademarkProof3" >
+                      <label class="form-check-label" for="trademarkProof3">
+                        INSTAGRAM
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="trademarkProof4" >
+                      <label class="form-check-label" for="trademarkProof4">
+                        LINKDEIN
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="trademarkProof5" >
+                      <label class="form-check-label" for="trademarkProof5">
+                        INVOICE
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="trademarkProof6" >
+                      <label class="form-check-label" for="trademarkProof6">
+                        DOMAIN CERTIFICATE
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="trademarkProof7" >
+                      <label class="form-check-label" for="trademarkProof7">
+                        GST CERTIFICATE
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="trademarkProof8" >
+                      <label class="form-check-label" for="trademarkProof8">
+                        INCORPORATION CERTIFICATE
+                      </label>
+                    </div>
+
+
+                  </div>
+                  </div>
+
+                  <!-- <div class="col-8">
+                    <label for="facebookLink" class="form-label"><strong>FACEBOOK PAGE LINK</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Facebook Page Link"
+                      id="facebookLink">
+                  </div> -->
+
+                  <h5 class="card-title">AUTHORIZATION</h5>
+                  <hr style="margin: 0; border: 1px solid black;">
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="authorizationName" class="col-form-label"><strong>NAME OF THE PERSON</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Authorized Person Name"
+                      id="authorizationName">
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="authorizationSign" class="col-form-label"><strong>SIGNATURE</strong></label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="file" id="authorizationSign">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="authorizationPlace" class="col-form-label"><strong>PLACE</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Place"
+                      id="authorizationPlace">
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="authorizationDate" class="col-form-label"><strong>DATE</strong></label>
+                    <div class="col-12">
+                        <input type="date" class="form-control" id="authorizationDate">
+                    </div>
+                </div>
+
+                  <div class="text-end">
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                    <button type="button" class="btn btn-secondary">Save</button>
+                    <button type="button" class="btn btn-success" onclick="trademarkaffidavitdata()">Submit</button>
+                  </div>
+                </form><!-- Vertical Form -->
+
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End Left side columns -->
+
+
+
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span >Optimistic IP</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed & Developed by <a href="https:/digitalbolt.co/">Digital Bolt</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/trademarkform.js"></script>
+  <script src="assets/js/trademarkaffidavit.js"></script>
+
+</body>
+
+</html>

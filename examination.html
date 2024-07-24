@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Optimistic IP - Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./assets/img/optimisticiplogo.jpeg" rel="icon">
+  <link href="./assets/img/optimisticiplogo.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/challan.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <span class="d-none d-lg-block">OptimisticIP</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="./pages-login.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item d-flex justify-content-center">
+      <a class="nav-link collapsed" href="index.html">
+        <img src="./assets/img/optimisticiplogo.jpeg" alt="" style="height: 150px;">
+      </a>
+    </li><!-- End Dashboard Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="index.html">
+        <i class="bi bi-grid"></i>
+        <span>Dashboard</span>
+      </a>
+    </li><!-- End Dashboard Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="trademark.html">
+        <i class="bi bi-patch-check"></i>
+        <span>TRADEMARK AFFIDAVIT</span>
+      </a>
+    </li><!-- End Profile Page Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="examination.html">
+        <i class="bi bi-card-text"></i>
+        <span>EXAMINATION REPORT</span>
+      </a>
+    </li><!-- End F.A.Q Page Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="opposition.html">
+        <i class="bi bi-envelope-exclamation"></i>
+        <span>OPPOSITION NOTICE</span>
+      </a>
+    </li><!-- End F.A.Q Page Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="drafts.html">
+        <i class="bi bi-inboxes"></i>
+        <span>DRAFTS</span>
+      </a>
+    </li><!-- End F.A.Q Page Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="final.html">
+        <i class="bi bi-floppy"></i>
+        <span>FINAL</span>
+      </a>
+    </li><!-- End F.A.Q Page Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-login.html">
+        <i class="bi bi-box-arrow-in-right"></i>
+        <span>Logout</span>
+      </a>
+    </li><!-- End Login Page Nav -->
+
+  </ul>
+
+</aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>EXAMINATION REPORT TEMPLATE</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Examination Report</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row d-flex justify-content-center">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+
+            <div class="card">
+              <div class="card-body">
+
+                <!-- Vertical Form -->
+                <form class="row g-3">
+
+                  <h5 class="card-title">APPLICATION SECTION</h5>
+                  <hr style="margin: 0; border: 1px solid black;">
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="examinationApplicationNumber" class="col-form-label"><strong>APPLICATION
+                        NUMBER</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Application Number"
+                      id="examinationApplicationNumber">
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="examinationClasses" class="col-form-label"><strong>
+                        CLASSES</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="examinationClasses"
+                        name="country">
+                        <option>- Select -</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="examinationStatus" class="col-form-label"><strong>STATUS</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="examinationStatus"
+                        name="examinationStatus">
+                        <option>- Select -</option>
+                        <option value="examinationStatus1">OBJECTED</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <legend class="col-form-label"><strong>TRADEMARK TYPE</strong></legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="examinationTrademarkType"
+                          id="examinationTrademarkType1" value="option1">
+                        <label class="form-check-label" for="examinationTrademarkType1">
+                          WORD
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="examinationTrademarkType"
+                          id="examinationTrademarkType2" value="option2">
+                        <label class="form-check-label" for="examinationTrademarkType2">
+                          LOGO/DEVICE
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="examinationTrademarkDescription" class="col-form-label"><strong>DESCRIPTION OF
+                        MARK</strong></label>
+                    <div class="col-12">
+                      <textarea class="form-control" style="height: 70px" id="examinationTrademarkDescription"
+                        placeholder="Enter Mark Description"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="examinationApplicationOffice" class="col-form-label"><strong>APPLIACTION
+                        OFFICE</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="examinationApplicationOffice"
+                        name="examinationApplicationOffice">
+                        <option>- Select -</option>
+                        <option value="MU">MUMBAI</option>
+                        <option value="DE">DELHI</option>
+                        <option value="KO">KOLKATA</option>
+                        <option value="CH">CHENNAI</option>
+                        <option value="AH">AHMEDABAD</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="examinationDateOfApplication" class="col-form-label"><strong>DATE OF APPLICATION</strong></label>
+                    <div class="col-12">
+                      <input type="date" class="form-control" id="examinationDateOfApplication">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="examinationDateOfUsage" class="col-form-label"><strong>DATE OF USAGE</strong></label>
+                    <div class="col-12">
+                      <input type="date" class="form-control" id="examinationDateOfUsage">
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="examinationProprietorName" class="form-label"><strong>PROPORIETOR NAME</strong></label>
+                    <div class="d-flex">
+                      <div class="col-lg-6 col-sm-12 p-2">
+                        <label for="examinationProprietorFirstName" class="form-label">First Name</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter First Name"
+                          id="examinationProprietorFirstName">
+                      </div>
+                      <div class="col-lg-6 col-sm-12 p-2">
+                        <label for="examinationProprietorLastName" class="form-label">Last Name</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter Last Name"
+                          id="examinationProprietorLastName">
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-12">
+                    <label for="examinationProprietorAddress" class="form-label"><strong>PROPRIETOR ADDRESS</strong></label>
+                    <div class="d-flex">
+                      <div class="col-lg-6 col-sm-6 p-2">
+                        <label for="examinationProprietorStreetAddress" class="form-label">Street Address</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter Street Address"
+                          id="examinationProprietorStreetAddress">
+                      </div>
+                      <div class="col-lg-6 col-sm-6 p-2">
+                        <label for="examinationProprietorAddressLine2" class="form-label">Address Line 2</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter Address Line 2"
+                          id="examinationProprietorAddressLine2">
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="col-lg-3 col-sm-3 p-2">
+                        <label for="examinationProprietorCity" class="form-label">City</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter City" id="examinationProprietorCity">
+                      </div>
+                      <div class="col-lg-3 col-sm-3 p-2">
+                        <label for="examinationProprietorState" class="form-label">State/Region/Province</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter State or Region"
+                          id="examinationProprietorState">
+                      </div>
+                      <div class="col-lg-3 col-sm-3 p-2">
+                        <label for="examinationProprietorPostalCode" class="form-label">Postal / Zip Code</strong></label>
+                        <input type="text" class="form-control col-6" placeholder="Enter Postal or Zip Code"
+                          id="examinationProprietorPostalCode">
+                      </div>
+                      <div class="col-lg-3 col-sm-3 p-2">
+                        <label for="examinationProprietorCountry" class="form-label">Country</label>
+                        <div class="col-12">
+                          <select class="form-select" aria-label="Default select example" id="examinationProprietorCountry"
+                            name="country">
+                            <option>select country</option>
+                            <option value="AF">Afghanistan</option>
+                            <option value="AX">Aland Islands</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antarctica</option>
+                            <option value="AG">Antigua and Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="BA">Bosnia and Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BV">Bouvet Island</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="BN">Brunei Darussalam</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="CV">Cape Verde</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, Democratic Republic of the Congo</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CI">Cote D'Ivoire</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CW">Curacao</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands (Malvinas)</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GG">Guernsey</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-Bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HM">Heard Island and Mcdonald Islands</option>
+                            <option value="VA">Holy See (Vatican City State)</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran, Islamic Republic of</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IM">Isle of Man</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JE">Jersey</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KP">Korea, Democratic People's Republic of</option>
+                            <option value="KR">Korea, Republic of</option>
+                            <option value="XK">Kosovo</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Lao People's Democratic Republic</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libyan Arab Jamahiriya</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MO">Macao</option>
+                            <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MV">Maldives</option>
+                            <option value="ML">Mali</option>
+                            <option value="MT">Malta</option>
+                            <option value="MH">Marshall Islands</option>
+                            <option value="MQ">Martinique</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="MU">Mauritius</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">Mexico</option>
+                            <option value="FM">Micronesia, Federated States of</option>
+                            <option value="MD">Moldova, Republic of</option>
+                            <option value="MC">Monaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MA">Morocco</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="MM">Myanmar</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="AN">Netherlands Antilles</option>
+                            <option value="NC">New Caledonia</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Niger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk Island</option>
+                            <option value="MP">Northern Mariana Islands</option>
+                            <option value="NO">Norway</option>
+                            <option value="OM">Oman</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PW">Palau</option>
+                            <option value="PS">Palestinian Territory, Occupied</option>
+                            <option value="PA">Panama</option>
+                            <option value="PG">Papua New Guinea</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PN">Pitcairn</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RE">Reunion</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russian Federation</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="BL">Saint Barthelemy</option>
+                            <option value="SH">Saint Helena</option>
+                            <option value="KN">Saint Kitts and Nevis</option>
+                            <option value="LC">Saint Lucia</option>
+                            <option value="MF">Saint Martin</option>
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                            <option value="VC">Saint Vincent and the Grenadines</option>
+                            <option value="WS">Samoa</option>
+                            <option value="SM">San Marino</option>
+                            <option value="ST">Sao Tome and Principe</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="SN">Senegal</option>
+                            <option value="RS">Serbia</option>
+                            <option value="CS">Serbia and Montenegro</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leone</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SX">Sint Maarten</option>
+                            <option value="SK">Slovakia</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="SB">Solomon Islands</option>
+                            <option value="SO">Somalia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                            <option value="SS">South Sudan</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="SD">Sudan</option>
+                            <option value="SR">Suriname</option>
+                            <option value="SJ">Svalbard and Jan Mayen</option>
+                            <option value="SZ">Swaziland</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="SY">Syrian Arab Republic</option>
+                            <option value="TW">Taiwan, Province of China</option>
+                            <option value="TJ">Tajikistan</option>
+                            <option value="TZ">Tanzania, United Republic of</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TL">Timor-Leste</option>
+                            <option value="TG">Togo</option>
+                            <option value="TK">Tokelau</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad and Tobago</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey</option>
+                            <option value="TM">Turkmenistan</option>
+                            <option value="TC">Turks and Caicos Islands</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="UM">United States Minor Outlying Islands</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="VN">Viet Nam</option>
+                            <option value="VG">Virgin Islands, British</option>
+                            <option value="VI">Virgin Islands, U.s.</option>
+                            <option value="WF">Wallis and Futuna</option>
+                            <option value="EH">Western Sahara</option>
+                            <option value="YE">Yemen</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabwe</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="examinationAttorneyName" class="col-form-label"><strong>ATTORNEY NAME</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="examinationAttorneyName"
+                        name="attorney">
+                        <option>- Select -</option>
+                        <option value="attorney1">SEEMA WADKAR</option>
+                        <option value="attorney2">HEMANGI SHAH</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <h5 class="card-title">EXAMINATION INFORMATION</h5>
+                  <hr style="margin: 0; border: 1px solid black;">
+
+                  <div class="col-lg-3 col-sm-12">
+                    <legend class="col-form-label"><strong>OBJECTION UNDER SECTION</strong></legend>
+                    <div class="col-sm-10">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection1">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection1">
+                          9 (1) a
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection2">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection2">
+                          9(1) b
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection3">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection3">
+                          9(1) c
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection4">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection4">
+                          9 (2) a
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection5">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection5">
+                          9 (2) b
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection6">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection6">
+                          9 (2) c
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection7">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection7">
+                          9 (3) a
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection8">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection8">
+                          9 (3) b
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection9">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection9">
+                          9 (3) c
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection10">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection10">
+                          11 (1) a
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection11">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection11">
+                          11 (1) b
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection12">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection12">
+                          11 (2) a
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection13">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection13">
+                          11 (2) b
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection14">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection14">
+                          11 (3) a
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="examinationInformationObjectionUnderSection15">
+                        <label class="form-check-label" for="examinationInformationObjectionUnderSection15">
+                          11 (3) b
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="examinationInformationReport" class="col-form-label"><strong>DATE OF EXAMINATION REPORT</strong></label>
+                    <div class="col-12">
+                      <input type="date" class="form-control" id="examinationInformationReport">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="examinationInformationOtherObjection" class="col-form-label"><strong>OTHER OBJECTION</strong></label>
+                    <div class="col-12">
+                      <textarea class="form-control" style="height: 70px" id="examinationInformationOtherObjection"
+                        placeholder="Enter Other Objection Description"></textarea>
+                    </div>
+                  </div>
+
+                  <h5 class="card-title">ANNEXURES</h5>
+                  <hr>
+
+                  <div class="col-lg-3 col-sm-12">
+                    <legend class="col-form-label"><strong>PROOFS AVAILABLE</strong></legend>
+                    <div class="col-12">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="annexuresProofsAvailable1">
+                        <label class="form-check-label" for="annexuresProofsAvailable1">
+                          WEBSITE
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="annexuresProofsAvailable2">
+                        <label class="form-check-label" for="annexuresProofsAvailable2">
+                          FACEBOOK
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="annexuresProofsAvailable3">
+                        <label class="form-check-label" for="annexuresProofsAvailable3">
+                          INSTAGRAM
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="annexuresProofsAvailable4">
+                        <label class="form-check-label" for="annexuresProofsAvailable4">
+                          LINKDEIN
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="annexuresProofsAvailable5">
+                        <label class="form-check-label" for="annexuresProofsAvailable5">
+                          INVOICE
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="annexuresProofsAvailable6">
+                        <label class="form-check-label" for="annexuresProofsAvailable6">
+                          DOMAIN CERTIFICATE
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="annexuresProofsAvailable7">
+                        <label class="form-check-label" for="annexuresProofsAvailable7">
+                          GST CERTIFICATE
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="annexuresProofsAvailable8">
+                        <label class="form-check-label" for="annexuresProofsAvailable8">
+                          INCORPORATION CERTIFICATE
+                        </label>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresWebsite" class="col-form-label"><strong>WEBSITE</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Website"
+                      id="annexuresWebsite">
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresDateOfRegistrationDomain" class="col-form-label"><strong>DATE OF REGISTRATION OF DOMAIN</strong></label>
+                    <div class="col-12">
+                      <input type="date" class="form-control" id="annexuresDateOfRegistrationDomain">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresFacebookLink" class="col-form-label"><strong>FACEBOOK PAGE LINK</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Facebook Link"
+                      id="annexuresFacebookLink">
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresInstagramLink" class="col-form-label"><strong>INSTAGRAM PAGE LINK</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Instagram Link"
+                      id="annexuresInstagramLink">
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresLinkdeinLink" class="col-form-label"><strong>LINKDEIN PAGE LINK</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Linkdein Link"
+                      id="annexuresLinkdeinLink">
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="annexuresInvoice" class="col-form-label"><strong>INVOICE</strong></label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="file" id="annexuresInvoice">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresInvoiceDate" class="col-form-label"><strong>DATE</strong></label>
+                    <div class="col-12">
+                      <input type="date" class="form-control" id="annexuresInvoice">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="annexuresDomainCertificate" class="col-form-label"><strong>DOMAIN CERTIFICATE</strong></label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="file" id="annexuresDomainCertificate">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresDomainCertificateDate" class="col-form-label"><strong>DATE</strong></label>
+                    <div class="col-12">
+                      <input type="date" class="form-control" id="annexuresDomainCertificateDate">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="annexuresGSTCertificate" class="col-form-label"><strong>GST CERTIFICATE</strong></label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="file" id="annexuresGSTCertificate">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresGSTCertificateDate" class="col-form-label"><strong>DATE</strong></label>
+                    <div class="col-12">
+                      <input type="date" class="form-control" id="annexuresGSTCertificateDate">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-sm-12">
+                    <label for="annexuresIncorporationCertificate" class="col-form-label"><strong>INCORPORATION CERTIFICATE</strong></label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="file" id="annexuresIncorporationCertificate">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresIncorporationCertificateDate" class="col-form-label"><strong>DATE</strong></label>
+                    <div class="col-12">
+                      <input type="date" class="form-control" id="annexuresIncorporationCertificateDate">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="annexuresDetailsPreviousRegistration" class="col-form-label"><strong>DETAILS OF PREVIOUS REGISTRATION</strong></label>
+                    <div class="col-12">
+                      <textarea class="form-control" style="height: 70px" id="annexuresDetailsPreviousRegistration"
+                        placeholder="Enter Other Objection Description"></textarea>
+                    </div>
+                  </div>
+
+                  <h5 class="card-title">CITED MARKS</h5>
+                  <hr style="margin: 0; border: 1px solid black;">
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="citedMarksApplicationNumber" class="col-form-label"><strong>APPLICATION
+                        NUMBER</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Application Number"
+                      id="citedMarksApplicationNumber">
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="citedMarksTypeOfMark" class="col-form-label"><strong>TYPE OF MARK</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="citedMarksTypeOfMark"
+                        name="citedMarksTypeOfMark">
+                        <option>- Select -</option>
+                        <option value="citedMarksTypeOfMark1">First Choice</option>
+                        <option value="citedMarksTypeOfMark2">Second Choice</option>
+                        <option value="citedMarksTypeOfMark3">Third Choice</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="citedMarksClass" class="col-form-label"><strong>
+                        CLASS</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="citedMarksClass"
+                        name="citedMarksClass">
+                        <option>- Select -</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="citedMarksImageOfMak" class="col-form-label"><strong>IMAGE OF THE MARK</strong></label>
+                    <div class="col-sm-10">
+                      <input class="form-control" type="file" id="citedMarksImageOfMak">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="citedMarksApplication" class="col-form-label"><strong>APPLICATION</strong></label>
+                    <input type="text" class="form-control" placeholder="Enter Application"
+                      id="citedMarksApplication">
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="citedMarksGoodsDescription" class="col-form-label"><strong>DESCRIPTION OF GOODS/SERVICES</strong></label>
+                    <div class="col-12">
+                      <textarea class="form-control" style="height: 70px" id="citedMarksGoodsDescription"
+                        placeholder="Enter Goods Description"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <label for="citedMarksDropdown" class="col-form-label"><strong>DROPDOWN</strong></label>
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example" id="citedMarksDropdown"
+                        name="citedMarksDropdown">
+                        <option>- Select -</option>
+                        <option value="citedMarksDropdown1">First Choice</option>
+                        <option value="citedMarksDropdown2">Second Choice</option>
+                        <option value="citedMarksDropdown3">Third Choice</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-12">
+                    <legend class="col-form-label"><strong>DEFENCE</strong></legend>
+                    <div class="col-sm-10">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="citedMarksDefence1">
+                        <label class="form-check-label" for="citedMarksDefence1">
+                          EARLIER PRIORITY DATE
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="citedMarksDefence2">
+                        <label class="form-check-label" for="citedMarksDefence2">
+                          DIFFERENT DESCRIPTION
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="citedMarksDefence3">
+                        <label class="form-check-label" for="citedMarksDefence3">
+                          PHONETICALLY DIFFERENT
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="text-end">
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                    <button type="button" class="btn btn-secondary">Save</button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                      data-bs-target="#taskcreated">Submit</button>
+                    <!-- Vertically centered Modal -->
+                    <div class="modal fade" id="taskcreated" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Review</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="text-start">
+                              <p><strong>Challan Number :</strong><span class="output" id="output1"></span></p>
+                              <p><strong>Category :</strong><span> Category 1 </span></p>
+                              <p><strong>Item Name :</strong><span> Item 1 </span></p>
+                              <p><strong>Date :</strong><span> 28-12-2023 </span></p>
+                              <p><strong>Inward/Outward :</strong><span> Inward </span></p>
+                              <p><strong>Manufacturer :</strong><span> 200 </span></p>
+                              <p><strong>Manufacturing Date :</strong><span> 200 </span></p>
+                              <p><strong>Expiry Date :</strong><span> 200 </span></p>
+                              <p><strong>Batch Number :</strong><span> 200 </span></p>
+                              <p><strong>Details :</strong><span> 200 </span></p>
+                              <p><strong>Purchase Price :</strong><span> 200 </span></p>
+                              <p><strong>MRP :</strong><span> 200 </span></p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                              onclick="iodata(),fun1();">Confirm</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- End Vertically centered Modal-->
+                  </div>
+                </form><!-- Vertical Form -->
+
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End Left side columns -->
+
+
+
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Optimistic IP</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed & Developed by <a href="https:/digitalbolt.co/">Digital Bolt</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/challantable.js"></script>
+  <script src="assets/js/printmodal.js"></script>
+
+</body>
+
+</html>
